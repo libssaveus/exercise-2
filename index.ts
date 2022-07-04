@@ -2,7 +2,7 @@
 //Time complexity ~O(1)
 function canWalkAround(path: string[]): boolean {
 
-  if(path.length === 10) {
+  if(path.length === 10) {  // We want spend only 10 minutes walk
 
     var topDown = 0;
     var leftRight = 0;
@@ -17,7 +17,7 @@ function canWalkAround(path: string[]): boolean {
       }
     }
 
-    return topDown === 0 && leftRight === 0;
+    return topDown === 0 && leftRight === 0;  // Return to the starting point
   }
 
   return false;
